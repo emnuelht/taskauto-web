@@ -1,4 +1,7 @@
-# ⚡ TaskAuto
+<h2>
+  <img src="https://cdn.simpleicons.org/vite" width="20" />
+  TaskAuto
+</h2>
 
 > **Uma plataforma avançada de gerenciamento de anotações impulsionada por Inteligência Artificial rodando 100% na sua máquina.**
 
@@ -10,7 +13,7 @@ Para garantir sua privacidade e facilidade de uso, a versão atual do projeto **
 
 ---
 
-## ✨ Principais Funcionalidades
+## Principais Funcionalidades
 
 - **Processamento via IA Local:** Escreva uma ideia em linguagem natural e o sistema estruturará automaticamente um título, resumo, extração de métricas/tarefas e estipulação de prazo.
 - **Detecção de Contexto:** O motor de IA classifica cada entrada como *Tarefa*, *Meta*, *Relatório Diário* ou *Observação*.
@@ -18,7 +21,7 @@ Para garantir sua privacidade e facilidade de uso, a versão atual do projeto **
 - **Gerenciamento por Grupos:** Organize suas dezenas de anotações através de uma arquitetura de pastas limpa na barra lateral.
 - **Foco em Privacidade:** Sem banco de dados na nuvem e sem telas de login. O sistema roda localmente, para você e por você.
 
-### 📸 Telas da Aplicação
+### Telas da Aplicação
 
 **Modo Claro / Painel Principal**
 ![Modo Claro](./docs/assets/step_2.png)
@@ -37,7 +40,7 @@ Para garantir sua privacidade e facilidade de uso, a versão atual do projeto **
 
 ---
 
-## 🛠️ Como Funciona e Stack Tecnológica
+## Como Funciona e Stack Tecnológica
 
 O projeto é dividido em um front-end moderno e um back-end local que se comunica com o motor de IA (Ollama).
 
@@ -49,14 +52,14 @@ O projeto é dividido em um front-end moderno e um back-end local que se comunic
 ### Backend Integrado (Requisito)
 A aplicação consome uma API local para processar as regras de negócio e realizar integrações.
 
-🔗 **[Acessar o Repositório da API (Backend)](https://github.com/emnuelht/taskauto-api)**
+**[Acessar o Repositório da API (Backend)](https://github.com/emnuelht/taskauto-api)**
 
 - **Java Spring Boot**: Microsserviço gerenciador de regras de negócio rodando localmente.
 - **Ollama (Gemma3 / Llama)**: Motor local responsável pela inferência e formatação de linguagem natural das notas, sem envio de dados para terceiros.
 
 ---
 
-## 🚀 Como Clonar e Instalar (Rodando Localmente)
+## Como Clonar e Instalar (Rodando Localmente)
 
 Como a aplicação é 100% voltada para o uso local, o processo de setup requer que o backend e o motor de IA também estejam configurados no seu ambiente.
 
