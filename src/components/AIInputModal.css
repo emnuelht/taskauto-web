@@ -1,0 +1,75 @@
+@import './Modal.css';
+
+.ai-modal__processing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 32px;
+    text-align: center;
+}
+
+.ai-modal__pulse {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    animation: pulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 32px var(--accent-glow);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 32px var(--accent-glow);
+    }
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 48px rgba(37, 99, 235, 0.5);
+    }
+}
+
+.ai-modal__form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.ai-modal__tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-height: 32px;
+}
+
+.tag--removable {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 8px 3px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    background: rgba(37, 99, 235, 0.12);
+    color: var(--accent-2);
+    border: 1px solid var(--border-accent);
+}
+
+.tag__remove-btn {
+    display: flex;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    opacity: 0.6;
+    padding: 0;
+}
+
+.tag__remove-btn:hover {
+    opacity: 1;
+}

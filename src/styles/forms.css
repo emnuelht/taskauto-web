@@ -1,0 +1,39 @@
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form__label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.form__input {
+    width: 100%;
+    padding: 11px 14px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+    outline: none;
+}
+
+.form__input::placeholder {
+    color: var(--text-muted);
+}
+
+.form__input:focus {
+    border-color: var(--accent-1);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form__textarea {
+    resize: vertical;
+    min-height: 100px;
+    line-height: 1.5;
+}
