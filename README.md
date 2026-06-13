@@ -72,10 +72,10 @@ Abra o seu terminal e execute os comandos abaixo para clonar o repositório e ba
 
 ```bash
 # Clone o repositório
-git clone https://github.com/SEU_USUARIO/TaskAutoSiteGithub.git
+git clone https://github.com/emnuelht/taskauto-web.git
 
 # Entre na pasta do projeto
-cd TaskAutoSiteGithub
+cd taskauto-web
 
 # Baixe as dependências do Node
 npm install
